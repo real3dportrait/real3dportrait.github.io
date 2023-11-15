@@ -116,7 +116,7 @@
       <img src="./static/images/Inference.png"
       class="interpolation-image"
       alt="The inference process of Real3D-Portrait."/>
-    <h2 class="title is-4">Below are 6 new demo videos provided in the rebuttal version.</h2>
+    <h2 class="title is-4">Below are 7 new demo videos provided in the rebuttal version.</h2>
 
     </div>
 
@@ -175,8 +175,6 @@
 
               We additionally compare with Next3D+PTI, Next3D is a 3D Face GAN that improves the EG3D with better controllability. PTI is a popular GAN inversion technique.
               <br></br>
-              <br></br>
-            
             </p>
             <video id="matting-video" controls playsinline height="100%">
               <source src="./static/videos/Comparison_with_Next3D.mp4",
@@ -205,6 +203,23 @@
     </div>
   </section>
 
+  <h2 class="title is-3">Rebuttal Demo 5: Comparison with 5 Video-driven 2D methods</h2>
+  In the following video, we show that our method achieves better performance than 5 additional 2D baselines at a large head pose.
+            <!-- Welcome video -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+        <div class="item item-steve">
+          <video poster="" id="steve" controls playsinline height="100%">
+            <source src="./static/videos/Comparison_with_5_additional_VD_baselines.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+    </div>
+  </div>
+</section>
+
+
     <!--/ BG. -->
 
     <div class="columns is-centered">
@@ -213,7 +228,7 @@
 
         <div class="content">
           <p></p>
-          <h3 class="title is-4">Rebuttal Demo 5: Comparison with AUD</h3>
+          <h3 class="title is-4">Rebuttal Demo 6: Comparison with AUD</h3>
           <p>
             AUD (Audio-driven talking face video generation with learning-based personalized head pose. arXiv:2002.10137.) is a person-specific audio-driven method, we use a 2-minute-long video to train a Obama model.
             <br></br>
@@ -233,7 +248,7 @@
         <div class="columns is-centered">
           <div class="column content">
           <p></p>
-          <h3 class="title is-4">Rebuttal Demo 6: Comparison with DFA-NeRF</h3>
+          <h3 class="title is-4">Rebuttal Demo 7: Comparison with DFA-NeRF</h3>
             <p>
               DFA-NeRF (arXiv:2002.10137) is a person-specific audio-driven method, we use a 2-minute-long video to train a Obama model. Since the DFA-NeRF official repo is incomplete, the current supported setting to obtain a reasonable result of DFA-NeRF is driving the model with a fixed pose and GT expression sequence.
             
