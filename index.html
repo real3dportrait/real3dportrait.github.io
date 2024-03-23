@@ -206,7 +206,7 @@
                   preload
                   playsinline
                   width="90%">
-              <source src="./static/videos/DEMO_Aud_Main.mp4"
+              <source src="./static/videos/DEMO_Aud_Main2.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -270,7 +270,7 @@
                   <b>Real3D-Portrait</b> could generate natural torso movement at a large scale.
                 </p>
                 <video id="dollyzoom" controls playsinline height="100%">
-                  <source src="./static/videos/LargePose.mp4"
+                  <source src="./static/videos/LargePose2.mp4"
                           type="video/mp4">
                 </video>
               </div>
@@ -288,7 +288,7 @@
                     With the individual background branch in HTB-SR model, our proposed <b>Real3D-Portrait</b> supports switchable background, which is useful in video conferencing.
                   </p>
                   <video id="matting-video" controls playsinline height="100%">
-                    <source src="./static/videos/Obama_BG.mp4"
+                    <source src="./static/videos/KUN_BG.mp4"
                             type="video/mp4">
                   </video>
                 </div>
@@ -300,7 +300,7 @@
 
           <h2 class="title is-3">Demo 4: How Real3D-Portrait generate the final video</h2>
           In the following video, we show how the final video is generated. (1) The <u>first column</u> is the source image, which is processed by the Image-to-Plane model to reconstruct a 3D avatar (canonical plane). (2) The <u>second column</u> is the motion representation, PNCC, which is predicted by the audio-to-motion model given the input audio signals. 
-          (3) Then the PNCC is used by motion adapter to obtain the motion diff-plane. By performing volume rendering to the <b>(canonical plane + motion diff-plane)</b>, we obtain the <u>third column</u>, which is the 128x128 resolution head image. (4) Then we feed the head image and source torso/background image into the head-torso-background super-resolution model to obtain the final 512x512 resolution video (which is the <u>fourth column</u>).
+          (3) Then the PNCC is used by motion adapter to obtain the motion diff-plane. By performing volume rendering to the <b>(canonical plane + motion diff-plane)</b>, we obtain the <u>third column</u>, which is the 128x128 resolution head image. (4) We also visualize the depth map of the 3D head. (5) Then we feed the head image and source torso/background image into the head-torso-background super-resolution model to obtain the final 512x512 resolution video (which is the <u>fourth column</u>).
 
               <!-- Welcome video -->
             <section class="hero is-light is-small">
@@ -308,18 +308,28 @@
                 <div class="container">
                     <div class="item item-steve">
                       <video poster="" id="steve" controls playsinline height="100%">
-                        <source src="./static/videos/Macron_debug.mp4"
+                        <source src="./static/videos/Mersi_debug.mp4"
                                 type="video/mp4">
                       </video>
                     </div>
                 </div>
               </div>
             </section>
+
+            <h1 class="title is-3">Disclaimer</h1>
+            <div class="content has-text-justified">
+              <p>
+                Any organization or individual is prohibited from using any technology mentioned in this paper to generate someone's talking video without his/her consent, including but not limited to government leaders, political figures, and celebrities. If you do not comply with this item, you could be in violation of copyright laws.
+              </p>
+            </div>
+
           </div>
       </div>
         <!-- Welcome video -->
 
-                      
+      
+
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
